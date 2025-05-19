@@ -18,7 +18,7 @@ import kotlinx.coroutines.withContext
 class RecipeRepositoryImpl(
     private val apiService: SpoonacularApiService,
     private val recipeDao: RecipeDao,
-    private val context: Context // For checking network connectivity
+    private val context: Context
 ) : RecipeRepository {
 
     private fun isNetworkAvailable(): Boolean {
