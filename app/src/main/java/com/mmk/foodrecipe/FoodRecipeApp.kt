@@ -14,7 +14,6 @@ class FoodRecipeApp : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        // Start Koin
         startKoin {
             androidLogger(Level.DEBUG) // Use Level.INFO or Level.NONE in release
             androidContext(this@FoodRecipeApp)
